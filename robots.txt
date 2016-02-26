@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /Resume-John-Veltri.pdf
+
+Sitemap: http://johnveltri.me/sitemap.xml

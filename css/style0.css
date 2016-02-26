@@ -1,0 +1,1352 @@
+/* COLORS
+---------------
+RED: #E21839
+BLACK: #070718
+CLOUD: #ecf0f1
+
+*/
+
+
+/* OVERALL & RESETS
+======================================*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body,
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+body {
+	padding-top: 50px;
+}
+.wrapper {
+	margin-top: -50px;
+}
+.wrapper,
+.main {
+	width: 100%;
+}
+
+
+/* FONTS & COLORS
+======================================*/
+
+.main h1,
+.main h2,
+.main h3,
+.main h4,
+.main h5,
+.main h6,
+.main p,
+.main a,
+.nav li a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #070718;
+}
+.main .title h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+.navbar-brand h1 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	color: #ecf0f1;
+	font-size: 2em;
+}
+/*orange emphasis throughout*/
+.main strong {
+	color: #E21839;
+}
+/*Logo*/
+.navbar-brand .glyphicon {
+	color: #E21839;
+	font-size: 1.8em;
+}
+
+.nav li a {
+	font-size: 1.3em;
+	line-height: 2.5em;
+}
+/*translate to wordpress*/
+.nav {
+	padding-right: 20px;
+}
+
+/* OVERALL
+======================================*/
+
+/*jumbotron and container resets*/
+.jumbotron {
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+.jumbotron .container {
+	margin: 0 auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1024px;
+}
+.title h1 {
+	background-color: #E21839;
+	margin: 0 auto 25px;
+	color: #ECF0f1;
+	font-weight: 700;
+}
+
+
+/* NAVIGATION
+======================================*/
+
+/*logo positoining*/
+a.navbar-brand {
+	padding: 5px 15px 0;
+}
+.navbar-brand h1,
+.navbar-brand .glyphicon {
+	display: inline-block;
+	margin: 0;
+	line-height: 1.5em;
+}
+/*fixing stupid zoom issue*/
+.navbar* !important {
+	border: 0px solid transparent;
+}
+/*nav links color and positioning*/
+.navbar-nav li,
+.navbar-nav a {
+	text-align: center;
+	line-height: 2.5em;
+}
+/*navigation color and transparency*/
+.navbar {
+	background: rgba(0,0,0,0.5);
+}
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+	border-width: 0px;
+	margin-top: 15px;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+	background-color: transparent;
+}
+div.navbar-header {
+	height: 70px;
+}
+
+/* HOME
+======================================*/
+
+/*cover photo*/
+#home-title {
+	background-image: url('../img/uber-office.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center 0;
+}
+/*title positioning*/
+#home-title h1 {
+	max-width: 900px;
+}
+/*# link div*/
+#learn-about-john {
+	position: absolute;
+	height: 10px;
+	margin-top: -70px;
+}
+.glyphicon-chevron-down {
+	font-size: 1.5em;
+	color: #E21839;
+}
+.jumper span {
+	padding-bottom: 0px;
+}
+/*homepage buttons color and positioning*/
+#home #home-title .cta,
+#home #home-title .cta:focus,
+#home #home-title .cta:visited {
+	border-color: #E21839;
+	color: #E21839;
+	background-color: #ecf0f1;
+}
+#home #home-title .cta:hover {
+	background-color: transparent;
+	color: #ecf0f1;
+}
+#home .btn {
+	font-size: 1.5em;
+	border-width: 3px;
+	font-weight: 700;
+	margin-top: 25px;
+}
+#home .btn:hover,
+#home .btn:focus {
+	background-color: transparent;
+}
+#home .on-dark {
+	background-color: #ecf0f1;
+	border-color: #E21839;
+	color: #E21839;
+}
+#home .on-dark:hover,
+#home .on-dark:focus {
+	color: #ecf0f1;
+}
+#home .on-light {
+	background-color: #E21839;
+	border-color: #E21839;
+	color: #ecf0f1;
+}
+#home .on-light:hover,
+#home .on-light:focus {
+	color: #E21839;
+}
+
+/*homepage statements*/
+#home #home-photo-john img {
+	border-radius: 50%;
+	width: 200px;
+	margin-bottom: -170px;
+}
+#home h4 {
+	text-align: left;
+}
+.even-jumbo h4 {
+	color: #070718;
+}
+.odd-jumbo h4 {
+	color: #ecf0f1;
+}
+.even-jumbo {
+	background-color: #ecf0f1;
+}
+.odd-jumbo {
+	background-color: #070718;
+}
+
+/*Coworker Feedback positioning*/
+#feedback-container {
+	max-width: 100%;
+}
+#home-others-said {
+	background-color: #070718;
+	color: #ecf0f1;
+	height: auto;
+	max-height: 1000px;
+	text-align: left;
+	font-size: 2.5em;
+}
+#home-others-said h3 {
+	font-size: 1.1em;
+	padding-left: 30px;
+	margin-top: 0;
+	color: #ecf0f1;
+}
+/*Quotes Responsive Images*/
+#home-others-said img {
+	width: 100%;
+	margin: 0 auto;
+	display: none;
+}
+#home-others-said img.img-lg {
+	max-width: 1200px;
+}
+#home-others-said img.img-md {
+	max-width: 900px;
+}
+#home-others-said img.img-sm {
+	max-width: 500px;
+}
+#home-others-said p {
+	color: #ecf0f1;
+	text-align: left;
+	margin: 0px;
+}
+
+/*Coworker Feedback positioning*/
+#api-container {
+	max-width: 100%;
+}
+#APIs {
+	height: auto;
+	max-height: 2000px;
+	background-color: #ecf0f1;
+}
+#home .main #APIs .container {
+	margin-top: 20px;
+}
+#APIs h3 {
+	font-size: 2.5em;
+	text-align: left;
+	padding-left: 30px;
+	margin: 0 auto 50px;;
+	color: #070718;
+}
+img#twitter-logo {
+	height: 50px;
+	width: 50px;
+}
+
+
+/* EXPERIENCE
+======================================*/
+
+/*cover photo*/
+#experience-title {
+	background-image: url('../img/pinterest-office.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/*experience box - title*/
+#experience-skills {
+	background-color: #ecf0f1;
+}
+#experience-skills .container {
+	padding: 0%;
+}
+#experience .skill h3 {
+	color: #ecf0f1;
+	font-size: 1em;
+	margin-top: 5vw;
+}
+#experience .skill h6 {
+	color: #ecf0f1;
+	margin-top: 20px;
+	font-weight: bold;
+}
+#experience .skill .skill-title {
+	border-width: 1px;
+	border-style: solid;
+	margin: 0px 0px 0px 0px;
+}
+#experience .skill {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	padding: 0px;
+}
+#experience .skill,
+#experience .skill .skill-title,
+#experience .skill .skill-details {
+	overflow: hidden;
+}
+/*experience box - details*/
+#experience .skill p {
+	font-size: 1em;
+	text-align: justify;
+	color: #070718;
+}
+#experience .skill .skill-details {
+	display: none;
+	background-color: transparent;
+	border-width: 1px;
+	border-style: solid;
+	margin: 0px 0px 0px 0px;
+	padding: 0 15px;
+}
+/*CTA back home*/
+#experience .btn,
+#about .btn {
+	font-size: 1.2em;
+	border-width: 3px;
+	font-weight: 700;
+	margin-top: 25px;
+	display: block;
+	margin: 0 auto;
+	max-width: 300px;
+	clear: both;
+}
+#experience .btn:hover,
+#experience .btn:focus,
+#about .btn:hover,
+#about .btn:focus {
+	background-color: #E21839;
+}
+#experience .on-light,
+#about .on-light {
+	background-color: transparent;
+	border-color: #E21839;
+	color: #E21839;
+}
+#experience .on-light:hover,
+#experience .on-light:focus,
+#about .on-light:hover,
+#about .on-light:focus {
+	color: #ecf0f1;
+	text-decoration: none;
+}
+/*resume*/
+#experience a,
+#about a {
+	text-decoration: none;
+}
+#experience a#resume-link {
+	max-width: 300px;
+}
+#experience #resume-link h4 {
+	background-image: url('../img/pdf-icon.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	display: block;
+	font-size: 1.5em;
+	line-height: 100px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	padding-left: 70px;
+/*TURN ON AFTER INCLUDING RESUME*/
+	margin: 0 auto;
+	max-width: 300px;
+	clear: both;
+
+}
+
+
+
+/* ABOUT
+======================================*/
+/*cover photo*/
+#about-title {
+	background-image: url('../img/downtown-chicago.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 1000px;
+	background-position: center -70px;
+}
+/*title*/
+#about-title {
+	padding: 100px 0 0;
+	max-height: 200px;
+}
+/*body & sections*/
+#about-body .container {
+	max-width: 1000px;
+}
+#about-body p {
+	text-align: left;
+}
+#about-body .odd-jumbo h3,
+#about-body .odd-jumbo p,
+#about-body .odd-jumbo li {
+	color: #ecf0f1;
+}
+img.miami-logo {
+	height: auto;
+	max-height: 100px;
+}
+img.topco-logo {
+	height: auto;
+	max-height: 100px;
+}
+img.nielsen-logo {
+	height: auto;
+	max-height: 55px;
+}
+#about-education strong {
+	color: #ecf0f1;
+}
+#about-career strong {
+	color: #070718;
+}
+#about .company {
+	margin-bottom: 30px;
+}
+#about .about-company {
+	margin-top: 30px;
+}
+#about .about-subtitle {
+	margin-bottom: 30px;
+}
+#about-content {
+	padding-top: 20px;
+}
+#quotes {
+	max-width: 600px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+}
+.quote-cite{
+	float: right;
+	clear: left;
+	margin: 5px 0;
+}
+#about li {
+	clear: both;
+	text-align: left;
+	list-style: none;
+	margin: 0px;
+}
+#about a .btn {
+	margin-top: 50px;
+}
+
+/* CONNECT
+======================================*/
+/*cover photo*/
+#connect-title {
+	background-image: url('../img/macbook-iphone2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+/*body*/
+#connect-body {
+	padding-top: 50px;
+	background-color: #ecf0f1;
+}
+#connect-info p {
+	padding-left: 20px;
+	text-align: left;
+}
+#connect #connect-body a,
+#connect #connect-body a:visited,
+#connect #connect-body a:hover,
+#connect #connect-body a:focus {
+	text-decoration: none;
+}
+#connect #connect-body a,
+#connect #connect-body a:visited {
+	color: #070718;
+}
+#connect #connect-body a:hover,
+#connect #connect-body a:focus {
+	color: #E21839;
+}
+#connect #photo-john img {
+	border-radius: 50%;
+	width: 150px;
+	margin-bottom: 30px;
+}
+/*social media*/
+#connect #social-media li {
+	list-style: none;
+	text-align: left;
+	padding: 10px 0 10px 50px;
+	height: 50px;
+	width: 120px;
+	margin: 0 auto;
+}
+#connect li#linkedin {
+	background-image: url('../img/linkedin.png');
+}
+#connect li#twitter {
+	background-image: url('../img/twitter.png');
+}
+#connect li#facebook {
+	background-image: url('../img/facebook.png');
+}
+#connect li#email {
+	background-image: url('../img/email.png');
+}
+#connect li#linkedin,
+#connect li#twitter,
+#connect li#facebook,
+#connect li#email {
+	background-repeat: no-repeat;
+	background-size: 40px;
+}
+
+
+/* MEDIA QUERIES
+======================================*/
+
+/* Extra Small, Smartphones */
+@media only screen and (min-width: 200px) {
+
+/*OVERALL*/
+	/*navigation*/
+	a.navbar-brand {
+		padding: 10px 15px 0;
+	}
+	.navbar-brand h1 {
+		font-size: 1.75em;
+	}
+	.navbar-brand .glyphicon {
+		font-size: 1.35em;
+	}
+	button.navbar-toggle.collapsed,
+	button.navbar-toggle {
+		margin-right: 0px;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		padding-top: 10px;
+		height: 50px;
+		color: #ECF0f1;
+		padding-left: 5px;
+	}
+	/*navigation color and transparency*/
+	.navbar-inverse .navbar-nav > li > a:hover,
+	.navbar-inverse .navbar-nav > li > a:focus,
+	.navbar-inverse .navbar-nav > .active > a,
+	.navbar-inverse .navbar-nav > .active > a:hover,
+	.navbar-inverse .navbar-nav > .active > a:focus	 {
+		/*background: #222;*/
+		background: rgba(0,0,0,0);
+	}
+	/*footer*/
+	.footer h5 {
+		font-size: 0.95em;
+	}
+	.footer h6 {
+		font-size: 0.8em;
+	}
+	/*titles*/
+	#experience-title h1,
+	#about-title h1,
+	#connect-title h1 {
+		font-size: 3em;
+	}
+
+/*HOME*/
+	#home .main #home-title {
+		height: 70vh;
+		min-height: 500px;
+		padding-top: 0px;
+		margin-top: 0;
+		background-size: 1000px;
+		background-position: -300px 0px;
+	}
+	#home-title h1 {
+		font-size: 2.1em;
+		margin: 100px -15px 100px -15px;
+	}
+	#home #home-photo-john img {
+		border-radius: 50%;
+		width: 150px;
+		margin-bottom: -70px;
+	}
+	#home .main h4 {
+		font-size: 1.2em;
+		line-height: 1.3em;
+		margin: auto -5px;
+		min-height: 120px;
+		padding: 10% 0%;
+	}
+	#home .title .btn {
+		font-size: 1.3em;
+		margin-top: -50px;
+	}
+	#home .odd-jumbo .btn,
+	#home .even-jumbo .btn {
+		font-size: 1.1em;
+		margin-top: -20px;
+	}
+	#home .main #home-others-said {
+		height: auto;
+	}
+ 	#feedback-container,
+	#api-container {
+		padding: 0px;
+		margin: auto;
+	}
+	#feedback-container img {
+		min-width: 100%;
+	}
+	#home-others-said h3 {
+		font-size: 0.7em;
+		margin-left: -40px;
+		margin-right: 0px;
+		padding-bottom: 20px;
+	}
+	#home-others-said p {
+		margin-left:-5px;
+		margin-top: -15px;
+		font-size: 0.3em;
+	}
+	#home-others-said img.img-lg,
+	#home-others-said img.img-md {
+		display: none;
+	}
+	#home-others-said img.img-sm {
+		display: block;
+	}
+	#APIs h3 {
+		font-size: 1.75em;
+		margin-left: -40px;
+		margin-right: -15px;
+	}
+
+
+/*EXPERIENCE*/
+	#experience-title {
+		background-size: 700px;
+		background-position: center 0;
+	}
+	#experience .main #experience-title {
+		height: auto;
+		min-height: 300px;
+		max-height: 450px;
+		padding: 65px 0 0;
+	}
+	#experience-title h1 {
+		margin-top: 20px;
+		max-width: 300px;
+		padding: 3px;
+	}
+	#experience .skill {
+		margin: 2vw 1vw;
+		width: 85vw;
+		height: 85vw;
+		max-height: 300px;
+	}
+	#experience .skill .skill-title {
+		padding: 0;
+	}
+	#experience .skill h3 {
+		font-size: 2.4em;
+		margin-top: 20vw;
+	}
+	#experience .skill p {
+		font-size: .9em;
+		float: left;
+		padding: 5px 10px;
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: 0px;
+	}
+	/*Colors*/
+		/*Red*/
+	#experience #skill-1 .skill-title,
+	#experience #skill-3 .skill-title,
+	#experience #skill-5 .skill-title,
+	#experience #skill-7 .skill-title,
+	#experience #skill-9 .skill-title {
+		border-color: #E21839;
+		background-color: #E21839;
+	}
+	#experience #skill-1 .skill-details,
+	#experience #skill-3 .skill-details,
+	#experience #skill-5 .skill-details,
+	#experience #skill-7 .skill-details,
+	#experience #skill-9 .skill-details {
+		border-color: #E21839;
+	}
+		/*Black*/
+	#experience #skill-2 .skill-title,
+	#experience #skill-4 .skill-title,
+	#experience #skill-6 .skill-title,
+	#experience #skill-8 .skill-title {
+		border-color: #070718;
+		background-color: #070718;
+	}
+	#experience #skill-2 .skill-details,
+	#experience #skill-4 .skill-details,
+	#experience #skill-6 .skill-details,
+	#experience #skill-8 .skill-details {
+		border-color: #070718;
+	}
+
+
+
+/*ABOUT*/
+	#about-title {
+		height: auto;
+		min-height: 320px;
+		max-height: 450px;
+		padding-top: 65px;
+		background-size: 1000px;
+		background-position: -300px -150px;
+	}
+	#about-title h1 {
+		max-width: 300px;
+		margin-top: 20px;
+		padding: 3px;
+	}
+	#about-body h3 {
+		font-size: 2.2em;
+	}
+	#about-body p {
+		font-size: 1.2em;
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	#about-quotes li {
+		font-size: 1.2em;
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	#about-body .about-company p {
+		font-size: 1.4em;
+	}
+	#about-body .about-company li {
+		font-size: 1.05em;
+	}
+	#about-body .about-company p,
+	#about-body .about-company li{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+/*CONNECT*/
+
+	#connect .main #connect-title {
+		height: auto;
+		min-height: 300px;
+		max-height: 450px;
+		padding-top: 65px;
+		background-size: 600px;
+		background-position: center -100px;
+	}
+	#connect-title h1 {
+		margin-top: 20px;
+		max-width: 400px;
+		padding: 3px;
+	}
+	#connect p {
+		margin-left: -40px;
+		margin-right: -25px;
+		font-size: 1.2em;
+	}
+}
+
+/* Small-ish */
+@media only screen and (min-width: 480px) {
+	.navbar-toggle {
+		margin-right: 10px;
+	}
+/*OVERALL*/
+	a.navbar-brand {
+		padding: 5px 15px 0;
+	}
+	.navbar-brand h1 {
+		font-size: 2em;
+	}
+	.navbar-brand .glyphicon {
+		font-size: 1.8em;
+	}
+	button.navbar-toggle.collapsed {
+		margin-right: 10px;
+	}
+	.footer h5 {
+		font-size: 1em;
+	}
+	.footer h6 {
+		font-size: 0.9em;
+	}
+	#experience-title h1,
+	#about-title h1,
+	#connect-title h1 {
+		font-size: 4em;
+	}
+
+/*HOME*/
+	#home .main #home-title {
+		height: 100vh;
+		background-size: 1500px;
+		background-position: center 0px;
+	}
+	#home #home-photo-john img {
+		width: 175px;
+		margin-bottom: -80px;
+	}
+	#home-title h1 {
+		font-size: 3em;
+	}
+	#home .main h4 {
+		font-size: 1.5em;
+	}
+	#home .title .btn {
+		font-size: 1.6em;
+	}
+	#home .even-jumbo .btn,
+	#home .odd-jumbo .btn {
+		font-size: 1.4em;
+	}
+/*EXPERIENCE*/
+	#experience-title {
+		background-size: 768px;
+		background-position: center 0;
+	}
+	#experience-title h1 {
+		max-width: 450px;
+	}
+	#experience .skill h3 {
+		font-size: 3em;
+		margin-top: 10vw;
+	}
+	#experience .skill p {
+		font-size: 1em;
+	}
+	#experience .skill {
+		max-height: 250px;
+	}
+
+/*ABOUT*/
+	#about-title {
+		background-size: 1200px;
+		background-position: -320px -250px;
+	}
+	#about-title h1 {
+		max-width: 400px;
+	}
+	#about-headline h3 {
+		font-size: 1.75em;
+	}
+	#mission-quote h5 {
+		font-size: 1.15em;
+	}
+	#about-body p {
+		font-size: 1.3em;
+	}
+	#quotes li {
+		font-size: 1.15em;
+	}
+
+/*CONNECT*/
+	#connect .main #connect-title {
+		background-size: cover;
+		background-position: 0px -250px;
+	}
+	#connect-title h1 {
+		max-width: 500px;
+	}
+	#connect #social-media ul {
+		margin: 20px 0;
+	}
+	#connect #social-media li {
+		display: inline-block;
+		margin: 0 20px;
+	}
+}
+@media only screen and (min-width: 600px) {
+	#connect #social-media li {
+		margin: 0 50px;
+	}
+	#experience .skill h3 {
+		font-size: 4em;
+		margin-top: 5vw;
+	}
+	#experience .skill {
+		max-height: 225px;
+	}
+}
+@media only screen and (min-width: 650px) {
+	/*navigation color and transparency*/
+	.navbar,
+	.navbar-inverse .navbar-nav > li > a:hover,
+	.navbar-inverse .navbar-nav > li > a:focus,
+	.navbar-inverse .navbar-nav > .active > a,
+	.navbar-inverse .navbar-nav > .active > a:hover,
+	.navbar-inverse .navbar-nav > .active > a:focus	 {
+		/*background: #222;*/
+		background: rgba(0,0,0,0.5);
+	}
+	#home #home-photo-john img {
+		width: 200px;
+		margin-bottom: -100px;
+	}
+	#home-others-said img.img-lg,
+	#home-others-said img.img-sm {
+		display: none;
+	}
+	#home-others-said img.img-md {
+		display: block;
+	}
+	.navbar-collapse {
+    min-width: 763px;
+	}
+}
+/* Small, Tablets */
+@media only screen and (min-width: 768px) {
+
+/*OVERALL*/
+	#experience-title h1,
+	#about-title h1,
+	#connect-title h1 {
+		font-size: 5em;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		height: 70px;
+	}
+	.navbar li {
+		clear: right;
+	}
+	a.navbar-brand {
+		padding-right: 0px;
+	}
+	.navbar-right {
+		margin-right: 0px;
+	}
+/*HOME*/
+	#home .main #home-title {
+		background-size: 2000px;
+		background-position: center -150px;
+	}
+	#home #home-photo-john img {
+		margin-bottom: -140px;
+	}
+	#home-title h1 {
+		font-size: 3.7em;
+		text-align: center;
+		margin: 100px auto;
+	}
+	#home .main .container {
+		max-width: 1200px;
+	}
+	#home .main h4 {
+		font-size: 2.0em;
+	}
+	#home-others-said h3{
+		font-size: 1em;
+	}
+	#home-others-said p {
+		margin-left: 15px;
+		font-size: 0.4em;
+	}
+	#APIs h3 {
+		font-size: 2.4em;
+	}
+
+/*EXPERIENCE*/
+	#experience-title {
+		background-size: 992px;
+		background-position: center -25px;
+	}
+	#experience-title h1 {
+		max-width: 600px;
+	}
+	#experience .skill {
+		margin: 2vw 1vw;
+		width: 40vw;
+		height: 40vw;
+		max-height: 300px;
+	}
+	#experience .skill h3 {
+		font-size: 2.8em;
+		margin-top: 10vw;
+	}
+
+	/*Colors*/
+		/*Red*/
+	#experience #skill-1 .skill-title,
+	#experience #skill-4 .skill-title,
+	#experience #skill-5 .skill-title,
+	#experience #skill-8 .skill-title,
+	#experience #skill-9 .skill-title {
+		border-color: #E21839;
+		background-color: #E21839;
+	}
+	#experience #skill-1 .skill-details,
+	#experience #skill-4 .skill-details,
+	#experience #skill-5 .skill-details,
+	#experience #skill-8 .skill-details,
+	#experience #skill-9 .skill-details {
+		border-color: #E21839;
+	}
+		/*Black*/
+	#experience #skill-2 .skill-title,
+	#experience #skill-3 .skill-title,
+	#experience #skill-6 .skill-title,
+	#experience #skill-7 .skill-title {
+		border-color: #070718;
+		background-color: #070718;
+	}
+	#experience #skill-2 .skill-details,
+	#experience #skill-3 .skill-details,
+	#experience #skill-6 .skill-details,
+	#experience #skill-7 .skill-details {
+		border-color: #070718;
+	}
+
+/*ABOUT*/
+	#about #about-title {
+		background-size: 1200px;
+		background-position: -100px -250px;
+	}
+	#about-title h1 {
+		max-width: 500px;
+	}
+
+/*CONNECT*/
+	#connect .main #connect-title {
+		background-size: 1000px;
+		background-position: center -310px;
+	}
+	#connect-title h1 {
+		max-width: 700px;
+	}
+	#connect-info p {
+		text-align: left;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 0px;
+	}
+	#connect #social-media ul {
+		margin: 30px 0;
+	}
+	#connect #social-media li {
+		margin: 0 10px;
+	}
+}
+
+/* Medium, Small Desktops */
+@media only screen and (min-width: 992px) {
+
+/*OVERALL*/
+	.navbar-inverse .navbar-nav > li > a {
+		padding-left: 15px;
+	}
+/*home*/
+	#home .main #home-title {
+		background-size: 2000px;
+		background-position: center -150px;
+	}
+	#home #home-photo-john img {
+		margin-bottom: -170px;
+	}
+	#home-title h1 {
+		font-size: 4em;
+	}
+	.title .btn {
+		font-size: 1.5em;
+	}
+	.jumbo-other .btn {
+		font-size: 1.3em;
+	}
+
+/*EXPERIENCE*/
+	#experience-title {
+		background-size: 1200px;
+		background-position: center -100px;
+	}
+	#experience-title h1 {
+		max-width: 600px;
+	}
+	.wrapper #experience .container {
+		max-width: 1400px;
+	}
+	#experience .skill h3 {
+		font-size: 3.5em;
+		margin-top: 5vw;
+	}
+
+/*ABOUT*/
+	#about-title {
+		background-size: 1800px;
+		background-position: center -400px;
+	}
+	#about-title h1 {
+		max-width: 600px;
+	}
+	#about .company img {
+		margin-left: -30px;
+	}
+/*CONNECT*/
+	#connect .main #connect-title {
+		background-size: 1200px;
+		background-position: -100px -250px;
+	}
+}
+
+/* Large, Desktops */
+@media only screen and (min-width: 1200px) {
+
+/*OVERALL*/
+
+/*home*/
+	#home .main #home-title {
+		background-size: 2200px;
+		background-position: center -200px;
+	}
+	#home-title h1 {
+		font-size: 4.5em;
+	}
+	.wrapper .container {
+		padding: 0 6vw;
+	}
+	#home-others-said h3{
+		font-size: 1.1em;
+		padding-bottom: 50px;
+	}
+	#home-others-said p {
+		margin-top: -40px;
+	}
+	#home-others-said img.img-md,
+	#home-others-said img.img-sm {
+		display: none;
+	}
+	#home-others-said img.img-lg {
+		display: block;
+	}
+	#APIs h3{
+		font-size: 2.6em;
+	}
+
+/*EXPERIENCE*/
+	#experience-title {
+		background-size: cover;
+		background-position: center -220px;
+	}
+	#experience .skill {
+		margin: 2vw 1vw;
+		width: 26vw;
+		height: 26vw;
+		max-width: 300px;
+		max-height: 300px;
+	}
+	#experience .skill h3 {
+		font-size: 2.6em;
+		margin-top: 5vw;
+	}
+	/*Colors*/
+	/*Red*/
+	#experience #skill-1 .skill-title,
+	#experience #skill-3 .skill-title,
+	#experience #skill-5 .skill-title,
+	#experience #skill-7 .skill-title,
+	#experience #skill-9 .skill-title {
+		border-color: #E21839;
+		background-color: #E21839;
+	}
+	#experience #skill-1 .skill-details,
+	#experience #skill-3 .skill-details,
+	#experience #skill-5 .skill-details,
+	#experience #skill-7 .skill-details,
+	#experience #skill-9 .skill-details {
+		border-color: #E21839;
+	}
+	/*Black*/
+	#experience #skill-2 .skill-title,
+	#experience #skill-4 .skill-title,
+	#experience #skill-6 .skill-title,
+	#experience #skill-8 .skill-title {
+		border-color: #070718;
+		background-color: #070718;
+	}
+	#experience #skill-2 .skill-details,
+	#experience #skill-4 .skill-details,
+	#experience #skill-6 .skill-details,
+	#experience #skill-8 .skill-details {
+		border-color: #070718;
+	}
+
+/*ABOUT*/
+	#about #about-title {
+		background-size: 1800px;
+		background-position: center -440px;
+	}
+/*CONNECT*/
+	#connect .main #connect-title {
+		background-size: 2200px;
+		background-position: center -1100px;
+	}
+	#connect #social-media ul {
+		margin: 0 0 60px;
+	}
+	#connect #social-media li {
+		margin: 0 0 5px;
+	}
+}
+/* Extra Large, Desktops */
+@media only screen and (min-width: 1700px) {
+	/*HOME*/
+	/*EXPERIENCE*/
+	#experience-title {
+		background-position: center -250px;
+	}
+	/*ABOUT*/
+	#about-title {
+		background-size: 1920px;
+		background-position: center -480px;
+	}
+	/*CONNECT*/
+}
+
+/* FOOTER
+======================================*/
+
+.footer {
+	clear: left;
+	background-color: #070718;
+	color:#bdc3c7;
+	text-align: center;
+	width: 100%;
+	min-height: 25vh;
+	padding-top: 20px;
+}
+
+.footer h5,
+.footer h6,
+.footer a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	min-height: 20px;
+	padding-top: 4px;
+}
+.footer h6#footer-logo {
+	font-family: 'Roboto Slab', serif;
+}
+
+.footer h5 {
+	text-decoration: underline;
+}
+
+.footer .footer-social h5 {
+	text-align: left;
+}
+
+.footer .footer-social a {
+	text-align: left;
+}
+
+.footer .footer-social a h6 {
+	padding-left: 40px;
+}
+
+.footer h6#footer-linkedin {
+	background-image: url('../img/linkedin-white.png');
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+.footer h6#footer-twitter {
+	background-image: url('../img/twitter-white.png');
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+.footer h6#footer-facebook {
+	background-image: url('../img/facebook-white.png');
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+.footer h6#footer-email {
+	background-image: url('../img/email-white.png');
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+.footer a,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus {
+	text-decoration: none;
+}
+
+.footer a,
+.footer a:visited {
+	color: #bdc3c7;
+}
+
+.footer a:hover,
+.footer a:focus {
+	color: #E21839;
+}
+
+.copyright {
+	margin: 30px auto 0px;
+}
+
+.footer-logo {
+	margin: 0px auto 30px;
+}
+
+.footer-logo b, .footer-logo h6 {
+	font-size: 12px;
+	color: #bdc3c7;
+	display: inline-block;
+}
