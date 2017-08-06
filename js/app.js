@@ -16,6 +16,20 @@ $(document).ready(function() {
   });
 });
 
+
+// Testimonial Scroll
+// When the DOM is ready, run this function
+$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pause: true,
+    interval: 6000,
+  });
+});
+
+
+
+
 //EXPERIENCE BOXES -----------------------------------------------------
 
 var originalColor;
